@@ -17,7 +17,7 @@ jobs:
       - name: Dependências do sistema
         run: |
           sudo apt-get update
-          sudo apt-get install -y git zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev cmake libffi-dev libssl-dev
+          sudo apt-get install -y git zip unzip autoconf automake libtool libtool-bin libltdl-dev m4 pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev cmake libffi-dev libssl-dev
       - name: Instalar Buildozer
         run: |
           pip install --upgrade pip
